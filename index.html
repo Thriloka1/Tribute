@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Che Guevara</title>
+</head>
+
+<body > 
+    <script>
+        // Include HTML function using JavaScript
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+
+        // Call the includeHTML function to include the navigation bar
+        includeHTML();
+    </script>
+    <div class="main">
+        <header>
+            <div class="head">
+                <h1 style="height: 20px; width: 100%;">Che Guevara
+                    <p style="font-size: small;">Former minister of Cuba</p>
+                </h1>
+            </div>
+            <div class="navbar">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html " style="color: rgb(196, 61, 8)">Home</a></li>
+                            <li><a href="contact.html" style="color: rgb(196, 61, 8);">Contact</a></li>
+                            <li><a href="Service.html" style="color: rgb(196, 61, 8);;">Services</a></li>
+                            <li>
+                                <div class="content">
+                                    <h3>
+                                        <a href="#section8" class="heading-link">
+                                            <p style="color: white; margin-left: 60%;color:rgb(196, 61, 8);">Login</p>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            <h1><a href="#section1" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;"> Early life</p></a></h1>
+            <h1><a href="#section2" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Che Guevara's Biography</p></a></h1>
+            <h1><a href="#section3" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Che Guevara’s Death and Last Words</p></a></h1>
+            <h1><a href="#section4" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Che Guevara’sIdeology</p></a></h1>
+            <h1><a href="#section5" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Revolutions of Che Guevara</p></a></h1>
+            <h1><a href="#section6" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Che Guevara’s Works and Quotes</p></a></h1>
+            <h1><a href="#section7" class="heading-link"><p style="font-size: 20px; color: darkcyan;padding: 6%;">Suggested Books and Movies</p></a></h1>
+        </div>
+        <div class="right-panel">
+            <div>
+                <div>
+                    <div id="section1" class="content-section"><h1 style="height: 2%;">Early Life</h1>
+                        <hr>
+                        <video src="./Che_Guevara__The_Communist_Solution_-_Fast_Facts___History(720p).mp4" style="width: 500px;margin-left: 40%;" controls loop autoplay muted></video>
+                        <p>Ernesto Guevara was born to
+                            <h2 style="font-size: medium;"> Ernesto Guevara Lynch andCelia de la Serna y Llosa, on 14 June 1928 in Rosario,Argentina.
+                            </h2>Although the legal name on his birth certificate was "Ernesto Guevara", his name sometimes appears with "de laSerna" and/or "Lynch" accompanying it.He was the eldest of five children in an upper-class Argentine family of pre-independenceimmigrant Spanish (Basque, Cantabrian), and Irish ancestry.
+                        </p>
+                        <p>
+                            <h3>Born</h3>	Ernesto Guevara 14 June 1928 Rosario, Santa Fe, Argentina
+                            <h3>Died</h3>	9 October 1967La Higuera, Santa Cruz, Bolivia
+                            <h3>Cause of death</h3>	Execution by shooting Resting place	Che Guevara Mausoleum, Santa Clara, Cuba
+                            <h3>Citizenship	</h3>ArgentinaCuba
+                            <h3>Occupation</h3>	Guerrillaphysiciandiplomatauthor Known for	Guevarism
+                        </p>
+                    </div>
+                    <div id="section2" class="content-section">
+                        <p>
+                            <h1 style="height: 2%;">Che Guevara's Biography</h1>
+                            <hr>
+                            <p> Ernesto “Che” Guevara was a revolutionary, and military strategist from Argentina.
+                                <h2 style="font-size: medium;">His stylised face has become a widespread emblem of revolution.
+                                    He was a significant figure in the Cuban Revolution.</h2>
+                                    When he returned to Argentina, he finished his studies and got his medical degree.
+                                    However, his time practising medicine persuaded Guevara that to help people, 
+                                    he needed to leave his practice and approach the political landscape of armed struggle.
+                                <p>
+                                    From 1956 Che Guevara played an important role in the Cuban Revolution against former 
+                                    Cuban President Fulgencio Batista. Through many initiatives ranging from teaching rural 
+                                    peasants to read and write to organising the production of weapons and teaching military
+                                    tactics Guevara convinced Fidel Castro of his importance and was made his second in command.
+                                </p>
+                                <img src="./trip.jpg" style="height: 300px; width: 300px;">
+                                A map of Guevara's 1952 trip with Alberto Granado.
+                                <p> In gratitude for Guevara's participation in the victory, 
+                                    the revolutionary government declared him “a Cuban citizen by birth” in February.
+                                    After his success in the Cuban Revolution, he was key in governmental
+                                    reforms in Cuba, which moved the country in an even more communist
+                                    direction. 
+                                    Guevara also became the finance minister and President 
+                                    of the National Bank of Cuba. 
+                                    After the failure of his industrialisation scheme in Cuba.
+                                    Che Guevara disappeared from public life. During this time he was involved in 
+                                    conflicts in the Congo and Bolivia.
+                                </p>
+                            </p>
+                        </p>
+                    </div>
+                    
+                    <div id="section3" class="content-section">
+                        <p>
+                            <h1 style="height: 2%;">Che Guevara's Death and Last Words</h1>
+                            <hr>
+                
+                            <p>
+                                Che Guevara's death is infamous because of how it took place. 
+                                As a result of Che Guevara's involvement in Bolivia, an informant 
+                                led the Bolivian Special Forces to Guevara's guerrilla base on October
+                                7, 1967. They took Guevara captive for interrogation and on October 9,
+                                the Bolivian president ordered Guevara’s execution. Though many believ
+                                e that his capture and subsequent execution were orchestrated by the CIA.
+
+                                When he saw a soldier arrive, Che Guevara stood up and had a dialogue with 
+                                his would-be executioner, uttering his last words:
+                                
+                                <h2 style="font-size: medium;">I know you have come to kill me. Shoot, coward! You are only going to kill a man!</h2>
+                                
+                                The government planned to tell the public that Guevara was killed in battle to prevent retaliation. To make the wounds fit that story, they instructed the executioner to avoid shooting the head, s
+                            </p>
+                            <div>
+                                    <h3>Military service</h3>Allegiance	Republic of Cuba Cuban Revolutionary Armed Forces
+                                    National Liberation Army of Bolivia
+                                    <h3>Years of service</h3>	1955–1967 Unit	26th of July Movement
+                                    <h3>Commands</h3>Commanding officer of the Cuban Revolutionary Armed Forces
+                                    <h3>Battles/wars	</h3>
+                                    <p>Cuban Revolution
+                                    Attack on El Uvero</p>
+                                    <h3>Operation Verano</h3>
+                                    <p>Battle of Las Mercedes</p>
+                                                                <p>Battle of Santa Clara</p>
+                                    <p>Bay of Pigs Invasion</p>
+                                    <p>Cuban Missile Crisis</p>
+                                <p>Congo Crisis</p>
+                            <p>Bolivian Campaign</p>
+                            </div>
+                        </p>
+                    </div>
+            
+                    <div id="section4" class="content-section">
+                        <h1 style="height: 2%;">
+                            Che Guevara'sIdeology
+                        </h1>
+                        <hr>
+                        <p>
+                            <img src="./commando_files/Marx_and_Engels.jpg" style="margin-left: 60%; width: 300px; height: 300px;">
+                                Marx and Engels
+                                <p>Like Karl Marx, he believed in a transition period before socialism and emphasised organising
+                                a stable administration to accomplish these goals.
+                                In his writings, Che Guevara focused on how to apply socialism to 
+                                “Third-World” countries.</p> 
+                                <h2 style="font-size: medium;">His main goal was the liberation and emancipation
+                                of humanity through socialism.
+                                </h2>He believed the only way to achieve this 
+                                emancipation was by educating a new man that would fight every type of authority.
+
+                                For Marxism to work, Guevara argued that workers must destroy the old way of thinking 
+                                to establish a new line of thought.
+                                
+                                To achieve this mentality,he advocated for constructing a revolutionary conscience in the workers. 
+                                This education must be tied with the transformation of the administrative
+                                    production process, encouraging public participation, and the politics of the masses.
+                                    A trait that set Guevara apart from other Marxists and revolutionaries was
+                                    his dedication to studying the conditions of each country to build a transition 
+                                    plan that responded to its needs. In his words, to create an effective society, 
+                                    there must be a stable transition.
+                        </p>
+                    </div>
+
+                    <div id="section5" class="content-section">
+                        <p>
+                            <h1 style="height: 2%;">Revolutions of che Guevara
+                            </h1>
+                            <hr>
+                            <p>
+                                <h2 style="font-size: medium;">The words “Che Guevara” and “revolution” are almost synonymous.</h2>
+                                <img src="./revolution.png" style="width: 300px;height: 300px; margin-left: 60%;">
+                                Journey of the yacht "Granma", from Mexico to Cuba.
+                                <h2 >The Congo</h2>
+                                Guevara travelled to Africa in early 1965 to contribute his guerrilla expertise 
+                                and knowledge to the ongoing battle in the Congo.
+                                <img src="./cango.jpg" style="height: 300px;width: 300px; margin-left: 60%;">
+                                Guevara aimed to export the revolution by instructing local fighters in Marxist ideology
+                                and strategies of guerrilla warfare.
+                                In regards to his failure,  he said:
+                            
+                                <h2 style="font-size: medium;"> “We can not liberate, all by ourselves, a country that does not want to fight.”2
+                                </h2>
+                                <h2 style="font-size: medium;">
+                                    Bolivia
+                                </h2>
+                                    Guevara changed his appearance to enter Bolivia and landed in La Paz under a false
+                                    identity in 1966. 
+                                    He left it three days after to organise his guerrilla army country's
+                                    rural southeast.
+                                    
+                            </p>
+                        </p>
+                    </div>
+
+                    <div id="section6" class="content-section">
+                        <p>
+                            <h1 style="height: 2%;">Che Guevara works and Quotes</h1>
+                            <hr>
+                            <p>
+                                <h2 style="font-size: medium;"> Che Guevara was a prolific writer,</h2>
+                                constantly narrating his time and thoughts during hi
+                                s endeavours in other countries.
+                                Despite this, he only wrote several books himself.
+                                These include The Motorcycle Diaries (1995), which details his motorcycle trip across South America
+                                which inspired many of his Marxist beliefs.
+                                <h2 style="font-size: medium;"> I knew that when the great guiding spirit cleaves humanity into two antagonistic halves, 
+                                    I will be with the people.
+                                </h2>
+                                The Bolivian Diary of Ernesto Che Guevara (1968) details his experiences in Bolivia.
+                                We regret the shedding of innocent blood by those who died; but peace cannot be built with
+                                mortars and machine guns, as those clowns in braided uniforms would have us believe.
+                                
+                                The last Che Guevara quote below shows this breaking point.
+                                
+                             <h2 style="font-size: medium;">When the forces of oppression come to maintain themselves in power against established law; 
+                                 peace is considered already broken.”
+                             </h2>
+                            
+                            </p>
+                        </p>
+                    </div>
+
+            
+                    <div id="section7" class="content-section">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <h1>Books</h1>
+                                <div class="books">
+                                    <div class="book">
+                                        <img src="./book1.jpg" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book2.jpeg" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book3.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book4.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                </div>
+                                <div class="books">
+                                    <div class="book">
+                                        <img src="./book5.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book6.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book7.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                    <div class="book">
+                                        <img src="./book8.jfif" style="width: 200px; height: 300px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="prevBtn" style="color: orangered;">Previous</button>
+                            <button id="nextBtn" style="color: orangered;">Next</button>
+                        </div>
+
+                        <div class="slider-container1">
+                            <div class="slider1">
+                                <h1>Movies</h1>
+                                <div class="Movies1">
+                                    <div class="movie">
+                                        <img src="./movie1.jpg"style="width: 200px; height: 300px;" alt="1. Che! (1969)">
+                                        <div id="image-name" style="width: 84%;">1. Che! (1969)</div>
+                                    </div>
+                                    <div class="movie">
+                                        <img src="./movie2.jpg"style="width: 200px; height: 300px;" alt="2. The Motorcycle Diaries (2004)">
+                                        <div id="image-name" style="width: 84%;">2. The Motorcycle Diaries (2004)</div>
+                                    </div>
+                                    <div class="movie">
+                                        <img src="./movie3.jpg" style="width: 200px; height: 300px;" alt="3. The Hands of Che Guevara (2006)">
+                                        <div id="image-name" style="width: 84%;">3. The Hands of Che Guevara (2006)</div>
+                                    </div>
+                                    <div class="movie">
+                                        <img src="./movie4.jpg"style="width: 200px; height: 300px;" alt="4. Che: Rise & Fall (2007)">
+                                        <div id="image-name" style="width: 84%;">4. Che: Rise & Fall (2007)</div>
+                                    </div>
+                                </div>
+                                <div class="movie1" >
+                                    <img src="./movie5.jpg"style="width: 200px; height: 300px; border: 3px solid tomato; " alt="5. Che (2008)" >
+                                    <div id="image-name1" style="width: 21%; height: 8%;">5. Che (2008)</div>
+                                </div>
+                            </div>
+                            <button id="prev" style="color: orangered;">Previous</button>
+                            <button id="next" style="color:orangered">Next</button>
+                        </div>
+                    </div>
+                    <div id="section8" class="content-section" >
+                        <div class="form" style="margin: 2%;">
+                            <input type="email" name="email" placeholder="Enter email " style="color: black;">
+                            <input type="password" name="" placeholder="Enter password">
+                            <button class="btnn"><a href="#">login</a></button>
+                            <p class="link">don't have an account<br><a href="#">sign up</a></p><p class="liw">log in with</p>
+                            <div class="icons">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+   border: 0%;
+    margin: 0%;
+   width: 100%;
+    background-image: url('cheg1.jpg'); /* Replace 'cheguevara.jpg' with the path to your Che Guevara image file */
+    background-color: #f2f2f2;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color:black; /* Set text color to white for better readability on the image */
+}
+
+.head{
+    
+     color: rgb(211, 20, 115); /* Set text color to contrast the background */
+    padding: 10px; /* Add padding for better spacing */
+    opacity: 0.8;
+    
+}
+        .container {
+            display: flex;
+            width: 100%;
+            background-color: #f2f2f2;
+            opacity: 0.8;
+            font-size: medium;
+            background-color: #f2f2f2;
+            height: 120%;
+            border: 0%;
+            margin: 0%;
+        }
+
+        .left-panel {
+            width: 30%;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        .right-panel {
+            width: 70%;
+            height: 100%;
+            padding: 20px;
+            opacity: 0.8;
+            font-weight: 500;
+        }
+        .scroll-container {
+            width: 865px;
+            height: 500px;
+            overflow-y: scroll; /* Add vertical scrollbar */
+            border: 1px solid #ccc;
+            padding: 30px;
+        }
+       
+        .content-section {
+            display: none;
+        }
+.Movies1{
+    display: flex;
+    width: 100%;
+    
+    margin-bottom: 5%;
+}
+.movie{
+    display: flex;
+    border: 3px solid tomato;
+    margin: 0.5%;
+    width: 100%;
+}
+.movie{
+    position: relative;
+  }
+ 
+.movie1{
+    position: relative;
+  }
+  
+  #image-name {
+    position: absolute;
+    margin: 0%;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  
+  #image-name1 {
+    position: absolute;
+    margin: 0%;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .books{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.book{
+    display: flex;
+    width: 100%;
+    border: 3px solid tomato;
+    margin: 0.5%;
+}
+.book{
+    position: relative;
+  }
+  
+  #book-name {
+    position: absolute;
+    margin: 0%;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+     background-color: #f2f2f2;
+     opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    height: 120px
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left:62px; 
+    margin-top:27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200PX;
+    height: 40PX;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 10px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50PX;
+    padding-left: 20PX;
+    margin-top: 9%;
+    letter-spacing: 2px;
+
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.content span{
+    color: #ff7200;
+    font-size: 60px;
+}
+.form{
+    width: 250px;
+    height: 380px;
+    background:linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left:none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center ;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+}
+.icon ion-icon:hover{
+    color: #ff7200;
+}
+
+.content-section {
+    display: none;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.slider-container1 {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider1 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+    </style>
+    <script>
+        
+            // Get all heading links
+            const headingLinks = document.querySelectorAll('.heading-link');
+    
+            // Add click event listener to each heading link
+            headingLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default behavior of the link click
+    
+                    // Get the target section's ID from the href attribute
+                    const targetId = this.getAttribute('href').substring(1);
+    
+                    // Hide all content sections
+                    document.querySelectorAll('.content-section').forEach(section => {
+                        section.style.display = 'none';
+                    });
+    
+                    // Display the target content section
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.style.display = 'block';
+                    }
+                });
+            });
+    
+function login(){
+    var n=document.getElementById('name').value;
+    console.log(n);
+}
+
+const slider = document.querySelector('.slider');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let counter = 0;
+
+nextBtn.addEventListener('click', () => {
+    if (counter < 2) {
+        counter++;
+    } else {
+        counter = 0;
+    }
+    updateSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter > 0) {
+        counter--;
+    } else {
+        counter = 2;
+    }
+    updateSlider();
+});
+
+function updateSlider() {
+    const offset = -counter * 100 + '%';
+    slider.style.transform = 'translateX(' + offset + ')';
+}
+
+
+const slider1 = document.querySelector('.slider1');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+let counter1 = 0;
+
+next.addEventListener('click', () => {
+    if (counter1 < 2) {
+        counter1++;
+    } else {
+        counter1 = 0;
+    }
+    updateSlider1();
+});
+
+prev.addEventListener('click', () => {
+    if (counter1 > 0) {
+        counter1--;
+    } else {
+        counter1 = 2;
+    }
+    updateSlider1();
+});
+
+function updateSlider1() {
+    const offset = -counter1 * 100 + '%';
+    slider1.style.transform = 'translateX(' + offset + ')';
+}
+    </script>
+</body>
+</html>
+
+

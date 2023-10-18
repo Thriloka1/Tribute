@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>home</title>
+    </head>
+    <body>
+        <div include-html="navbar.html"></div>
+
+            <script>
+                // Include HTML function using JavaScript
+                function includeHTML() {
+                    var z, i, elmnt, file, xhttp;
+                    z = document.getElementsByTagName("*");
+                    for (i = 0; i < z.length; i++) {
+                        elmnt = z[i];
+                        file = elmnt.getAttribute("include-html");
+                        if (file) {
+                            xhttp = new XMLHttpRequest();
+                            xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                    elmnt.innerHTML = this.responseText;
+                                    elmnt.removeAttribute("include-html");
+                                    includeHTML();
+                                }
+                            }
+                            xhttp.open("GET", file, true);
+                            xhttp.send();
+                            return;
+                        }
+                    }
+                }
+
+                // Call the includeHTML function to include the navigation bar
+                includeHTML();
+            </script>
+
+                <section>
+                    <div class="circle"></div>
+                    <header>
+                        <a href="#" class="logo"><img src="image1.png" class="logo" style="height: 150px; width: 150px;"></a>
+
+                    </header>
+                    <div class="content">
+                        <div class="textBox">
+                            <h3 style="padding: 5%; font-size: larger;"><span>A book</span> is a medium for recording information in the form of writing or images.
+                                <br>It can also be a handwritten or printed work of fiction or nonfiction. <br>
+                                The technical term for this physical arrangement is <span>codex</span>.<br>
+                                A single sheet in a codex is a <span>leaf</span> and each side of a leaf is a <span>page</span>.</h3>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div class="imgBox">
+                            <img src="image5.jpg" class="starbucks">
+                        </div>
+                    </div>
+                    <ul class="thumb">
+                        <li><img src="image3.webp" onclick="imgSlider('na.jpg');changeCirclecolor('#017143')"></li>
+                        <li><img src="image4" onclick="imgSlider('na1.jpg');changeCirclecolor('#eb7495')"></li>
+                        <li><img src="image2.png" onclick="imgSlider('na2.jpg');changeCirclecolor('#d752b1')"></li>
+                    </ul>
+                
+                </section>
+                <script type="text/javascript">
+                    function imgSlider(anything){
+                        document.querySelector('.starbucks').src=anything;
+                    }
+                    function changeCirclecolor(color){
+                        const circle=document.querySelector('.circle');
+                        circle.style.background = color;
+                    }
+                </script>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+                    *{
+                        margin:0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: 'Poppins',sans-serif;
+
+                    }
+                    section{
+                        position: relative;
+                        width: 100%;
+                        min-height: 80%;
+                        padding: 100px;
+                        display: flex;
+                        align-items: center;
+                        background: #fff;
+                    }
+                    header{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        padding: 20px 100px;
+                        display: flex;
+                        
+                        align-items: center;
+                    }
+                    header .logo{
+                        position: relative;
+                        max-width: 200px;
+                    }
+                    header a{
+                        display: inline-block;
+                        color: #333;
+                        font-weight: 400;
+                        margin-left: 40px;
+                        text-decoration: none;
+                    }
+                    .content{
+                        position: relative;
+                        width: 200%;
+                        display: flex;
+                        
+                        align-items: center;
+
+                    }
+                    .content .textBox{
+                        position: relative;
+                        max-width: 600px;
+                    }
+                    .content .textBox h3{
+                        color: #333;
+                        font-size: 4em;
+                        line-height: 1.4em;
+                        font-weight: 500;
+                    }
+                    .content .textBox h3 span{
+                        color: #a5378a;
+                        font-size: 1.2em;
+                        font-weight: 900;
+                    }
+                    .content .textBox p{
+                        color: #333;
+                    }
+                    .content .textBox a{
+                        display: inline-block;
+                        margin-top: 20px;
+                        padding: 8px 20px;
+                        background: #017143;
+                        color: #fff;
+                        border-radius: 40px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                    }
+                    .content .imgBox{
+                        width: 500px;
+                        height: 250px;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-right: 50px;
+                        
+
+                    }
+                    .content .imgBox img{
+                        max-width: 340px;
+                    }
+                    .thumb{
+                        width: 100px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 20px;
+                    
+                        display: flex;
+                    }
+                    .thumb li{
+                        list-style: none;
+                        display: inline-block;
+                        margin: 0 20px;
+                        cursor: pointer;
+                        transition: 0.5%;
+                        width: 600%;
+                    }
+                    .thumb li:hover{
+                        transform: translateY(-15px);
+                    }
+                    .thumb li img{
+                        max-width: 250px;
+                        height: 100px;
+                    }
+
+                    .circle{
+                        position:absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #c4e728;
+                        clip-path: circle(1000px at right 800px);
+                    }
+                </style>
+    </body>
+   
+</html>

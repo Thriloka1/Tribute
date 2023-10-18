@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="'IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>OUR SERVICES</title>
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    </head>
+    <body>
+                            <!-- Include the navigation bar -->
+                    <div include-html="navbar.html"></div>
+
+                    <script>
+                        // Include HTML function using JavaScript
+                        function includeHTML() {
+                            var z, i, elmnt, file, xhttp;
+                            z = document.getElementsByTagName("*");
+                            for (i = 0; i < z.length; i++) {
+                                elmnt = z[i];
+                                file = elmnt.getAttribute("include-html");
+                                if (file) {
+                                    xhttp = new XMLHttpRequest();
+                                    xhttp.onreadystatechange = function() {
+                                        if (this.readyState == 4 && this.status == 200) {
+                                            elmnt.innerHTML = this.responseText;
+                                            elmnt.removeAttribute("include-html");
+                                            includeHTML();
+                                        }
+                                    }
+                                    xhttp.open("GET", file, true);
+                                    xhttp.send();
+                                    return;
+                                }
+                            }
+                        }
+
+                        // Call the includeHTML function to include the navigation bar
+                        includeHTML();
+                    </script>
+                    <div style="width: 100%;height: 100%; background-color:#ddf1f1; color: black; border-radius: 10px;padding: 5px;">
+                        
+                        <h1 id="premiumBtn" style="margin-left: 80%;font-size: large; color: #536ee7;">Premium plans</h1>
+
+                        <div id="plansContainer" class="hidden" style="margin-left: 80%;">
+                            <form id="freeForm" class="hidden">Get 1 Month Free</form>
+                            <form id="oneMonthForm" class="hidden">1 Month Plan</form>
+                            <form id="threeMonthsForm" class="hidden">3 Months Plan</form>
+                            <form id="sixMonthsForm" class="hidden">6 Months Plan</form>
+                            <form id="annualForm" class="hidden">Annual Plan</form>
+                        </div>
+                        
+                    </div>
+                        <script> 
+                            premiumBtn = document.getElementById('premiumBtn');
+                            const plansContainer = document.getElementById('plansContainer');
+                            const freeForm = document.getElementById('freeForm');
+                            const oneMonthForm = document.getElementById('oneMonthForm');
+                            const threeMonthsForm = document.getElementById('threeMonthsForm');
+                            const sixMonthsForm = document.getElementById('sixMonthsForm');
+                            const annualForm = document.getElementById('annualForm');
+
+                            premiumBtn.addEventListener('click', () => {
+                                plansContainer.classList.toggle('hidden');
+                            });
+
+                            freeForm.addEventListener('click', () => {
+                                alert('Free Plan Selected: 1 Month Free');
+                            });
+
+                            oneMonthForm.addEventListener('click', () => {
+                                alert('1 Month Plan Selected');
+                            });
+
+                            threeMonthsForm.addEventListener('click', () => {
+                                alert('3 Months Plan Selected');
+                            });
+
+                            sixMonthsForm.addEventListener('click', () => {
+                                alert('6 Months Plan Selected');
+                            });
+
+                            annualForm.addEventListener('click', () => {
+                                alert('Annual Plan Selected');
+                            });
+                        </script>  
+                        <section class="ebook-section">
+                            
+                            <div class="book">
+                                <div class="ebook">
+                                    <h2 style="color: black;">I Embrace You With All My Revolutionary Fervor</h2>
+                                        <img src="./ebook1.jfif" style="width: 150px;">
+                                        <div class="ratings">
+                                            <span class="rating">4.5</span> <!-- Display the rating here -->
+                                            <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                        </div>
+                                        <div class="preview">
+                                            <button class="preview-button">Preview</button>
+                                        </div>
+                                        <div class="subscription">
+                                            <button class="subscribe-button">Subscribe</button>
+                                        </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">Latin America Diaries</h2>
+                                    <img src="./ebook2.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                            </div>
+                            <div class="ebook">
+                                <h2 style="color: black;">Author Is Lavretsky I</h2>
+                                    <img src="./ebook3" style="width: 150px;">
+                                   <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="book">
+                                <div class="ebook">
+                                    <h2 style="color: black;">Jose Marti</h2>
+                                    <img src="./ebook4.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">Alexander CHEE</h2>
+                                    <img src="./ebook5.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">The Story Teller</h2>
+                                    <img src="./ebook6.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="ebook">
+                                    <h2 style="color: black;">We Were Born On The Same Day</h2>
+                                    <img src="./ebook7.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">The Reader</h2>
+                                    <img src="./ebook8.jfif" style="width: 150px;">
+                                        <div class="ratings">
+                                            <span class="rating">4.5</span> <!-- Display the rating here -->
+                                            <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                        </div>
+                                        <div class="preview">
+                                            <button class="preview-button">Preview</button>
+                                        </div>
+                                        <div class="subscription">
+                                            <button class="subscribe-button">Subscribe</button>
+                                        </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">The Queen of the Night</h2>
+                                    <img src="./ebook9.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="ebook">
+                                        <h2 style="color: black;">Mount EMILEY</h2>
+                                        <img src="./ebook10.jfif" style="width: 150px;">
+                                    <div class="ratings">
+                                        <span class="rating">4.5</span> <!-- Display the rating here -->
+                                        <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                    </div>
+                                    <div class="preview">
+                                        <button class="preview-button">Preview</button>
+                                    </div>
+                                    <div class="subscription">
+                                        <button class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">We are not Free</h2>
+                                        <img src="./ebook11.jfif" style="width: 150px;">
+                                        <div class="ratings">
+                                            <span class="rating">4.5</span> <!-- Display the rating here -->
+                                            <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                        </div>
+                                        <div class="preview">
+                                            <button class="preview-button">Preview</button>
+                                        </div>
+                                        <div class="subscription">
+                                            <button class="subscribe-button">Subscribe</button>
+                                        </div>
+                                </div>
+                                <div class="ebook">
+                                    <h2 style="color: black;">Song of the Lion</h2>
+                                        <img src="./ebook12.jfif" style="width: 150px;">
+                                        <div class="ratings">
+                                            <span class="rating">4.5</span> <!-- Display the rating here -->
+                                            <span class="stars">⭐⭐⭐⭐</span> <!-- You can use stars or any other icon for rating -->
+                                        </div>
+                                        <div class="preview">
+                                            <button class="preview-button">Preview</button>
+                                        </div>
+                                        <div class="subscription">
+                                            <button class="subscribe-button">Subscribe</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                <style>
+                    section {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                    }
+                   
+                    .book{
+                        width: 40%;
+                    }
+                    .ebook-section {
+                        background-color: #ddf1f1;
+                        padding: 0px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        text-align: center;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                    .ebook{
+                        margin-top: 20px;
+                    }
+                    img{
+                        margin-top: 10px;
+                    }
+                    .ratings {
+                        margin: 10px 0;
+                    }
+
+                    .rating {
+                        font-weight: bold;
+                        color: #ff9900;
+                    }
+
+                    .preview-button, .subscribe-button {
+                        background-color: #4caf50;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        margin: 10px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    .preview-button:hover, .subscribe-button:hover {
+                        background-color: #45a049;
+                    }
+
+                    .hidden {
+                            display: grid;
+                        }
+                        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+                    *{
+                        margin:0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    body{
+                        background-color: #222;
+                        color: #fff;
+                        font-family: 'Poppins',sans-serif;
+
+                    }
+                    .services{
+                        width: 1300px;
+                        padding: 100px 60px;
+                        margin: auto;
+                    }
+                    .services h1{
+                        font-size: 40px;
+                        text-align: center;
+                        font-weight: 600;
+                        position: relative;
+                        margin-bottom: 60px;
+                        padding-bottom: 15px;
+                    }
+                    .services h1::after{
+                        content:'';
+                        position: absolute;
+                        width: 170px;
+                        height: 3px;
+                        background-color: #fff;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .services span{
+                        color: #008000;
+                        transition: .5s;
+                    }
+                    .content{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    .card{
+                        width: calc(34% - 20px);
+                        background-color: #fff;
+                        color: #000;
+                        padding: 40px;
+                        text-align: center;
+                        margin: 0 50px;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        position: relative;
+                    }
+                    .box i{
+                        font-size: 40px;
+                        border-radius: 50%;
+                        border: 1px solid rgba(0,0,0,0.5);
+                        padding: 15px;
+                        
+                    }
+                    .box h3{
+                        font-size: 25px;
+                    }
+                    .box p{
+                        margin: 15px 0;
+                    }
+                    .box a{
+                        text-decoration: none;
+                        color: #dc143c;
+                        font-weight: 500;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                    }
+                    .box a:hover{
+                        color: #000;
+                    }
+                    .card:hover .box i{
+                        background-color: rgb(255,187,0);
+                        color: #fff;
+                        border-radius: rgb(255,187,0);
+                    }
+                    .card::after{
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        background-color: rgba(0,0,0,0.39);
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transform: rotate(15deg);
+                        transition: all 0.5s ease;
+                    }
+                    .card:hover::after{
+                        transform: rotate(-15deg);
+                        background-color: rgb(255,187,0);
+                    }
+                </style>
+   
+    </body>
+</html>
